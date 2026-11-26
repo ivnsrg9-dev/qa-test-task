@@ -1,0 +1,302 @@
+{
+ "cases": {
+  "positive_medium": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "positive_small_4": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Малая, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "positive_large_20": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Большая, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "cap_small_5": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "participants": "В комнате максимум 4 участника."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "cap_medium_11": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "participants": "В комнате максимум 10 участника."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "cap_large_21": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "participants": "Количество участников — от 1 до 20."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "part_0": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "participants": "Количество участников — от 1 до 20."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "part_1": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "part_neg": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "participants": "Количество участников — от 1 до 20."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "part_frac": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "date_yesterday": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "date": "Дата не может быть в прошлом."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "date_today_future": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-25, 23:00–23:45 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "date_today_past": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-25, 08:00–09:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "dur_zero": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–10:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "dur_10min": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–10:10 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "dur_29min": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–10:29 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "dur_30min": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–10:30 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "dur_4h": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 09:00–13:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "dur_4h01": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 09:00–13:01 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "dur_9h": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 09:00–18:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "end_before_start": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "endTime": "Время окончания должно быть позже начала."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "no_room": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "room": "Выберите комнату."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "no_participants": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "participants": "Укажите количество участников."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "no_name": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "name": "Укажите имя."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "no_email": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "email": "Укажите рабочую почту."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "no_times": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "startTime": "Укажите время начала.",
+    "endTime": "Укажите время окончания."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "name_spaces": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "name": "Укажите имя."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "email_spaces": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "email": "Укажите рабочую почту."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "email_no_tld": {
+   "status_class": "form-status error",
+   "status": "Проверьте, пожалуйста, заполнение формы.",
+   "errors": {
+    "email": "Введите корректную рабочую почту."
+   },
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "email_double_at": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "email_double_dot": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "email_comma": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "email_cyr": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван Петров",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  },
+  "xss_name": {
+   "status_class": "form-status success",
+   "status": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Иван",
+   "errors": {},
+   "title": "Переговорные — бронирование комнаты"
+  }
+ },
+ "extras_chromium": {
+  "requests_after_submit": [
+   "https://rcsi-science.github.io/demo-roomly/",
+   "https://rcsi-science.github.io/demo-roomly/styles.css",
+   "https://rcsi-science.github.io/demo-roomly/script.js"
+  ],
+  "after_reload": {
+   "#room": "",
+   "#participants": "",
+   "#name": "",
+   "#email": ""
+  },
+  "after_success_reload": {
+   "status": "",
+   "name": ""
+  },
+  "room_change_error": "В комнате максимум 4 участника.",
+  "name_error_after_input": "",
+  "enter_submit": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Клава",
+  "aria_invalid": 0
+ },
+ "extras_firefox": {
+  "requests_after_submit": [
+   "https://rcsi-science.github.io/demo-roomly/",
+   "https://rcsi-science.github.io/demo-roomly/styles.css",
+   "https://rcsi-science.github.io/demo-roomly/script.js"
+  ],
+  "after_reload": {
+   "#room": "large",
+   "#participants": "7",
+   "#name": "Перезагрузка",
+   "#email": "r@company.ru"
+  },
+  "after_success_reload": {
+   "status": "",
+   "name": "Иван Петров"
+  },
+  "room_change_error": "В комнате максимум 4 участника.",
+  "name_error_after_input": "",
+  "enter_submit": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Клава",
+  "aria_invalid": 0
+ },
+ "extras_webkit": {
+  "requests_after_submit": [
+   "https://rcsi-science.github.io/demo-roomly/",
+   "https://rcsi-science.github.io/demo-roomly/styles.css",
+   "https://rcsi-science.github.io/demo-roomly/script.js"
+  ],
+  "after_reload": {
+   "#room": "",
+   "#participants": "",
+   "#name": "",
+   "#email": ""
+  },
+  "after_success_reload": {
+   "status": "",
+   "name": ""
+  },
+  "room_change_error": "В комнате максимум 4 участника.",
+  "name_error_after_input": "",
+  "enter_submit": "Бронирование создано. | Средняя, 2026-11-26, 10:00–11:00 · Клава",
+  "aria_invalid": 0
+ }
+}

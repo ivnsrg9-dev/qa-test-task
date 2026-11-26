@@ -1,0 +1,627 @@
+{
+  "meta": {
+    "browser": "145.0.7632.6",
+    "page": "file:///Users/ivn_srg/Desktop/Projects/demo-roomly/index.html",
+    "fixed_browser_time": "2026-11-26T12:00:00+03:00"
+  },
+  "cases": [
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nМалая, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "room_small_1",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "room": "Малая · до 4 человек",
+        "participants": "1"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nМалая, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "room_small_4",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "room": "Малая · до 4 человек",
+        "participants": "4"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "В комнате максимум 4 участника."
+      },
+      "case": "room_small_5",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "room": "Малая · до 4 человек",
+        "participants": "5"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "room_medium_10",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "participants": "10"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "В комнате максимум 10 участника."
+      },
+      "case": "room_medium_11",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "participants": "11"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nБольшая, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "room_large_20",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "room": "Большая · до 20 человек",
+        "participants": "20"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "Количество участников — от 1 до 20."
+      },
+      "case": "room_large_21",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "room": "Большая · до 20 человек",
+        "participants": "21"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "Количество участников — от 1 до 20."
+      },
+      "case": "participants_0",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "participants": "0"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "Количество участников — от 1 до 20."
+      },
+      "case": "participants_negative",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "participants": "-1"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "participants_fraction_2_5",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "participants": "2.5"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "Количество участников — от 1 до 20."
+      },
+      "case": "participants_fraction_0_5",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "participants": "0.5"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "В комнате максимум 10 участника."
+      },
+      "case": "participants_fraction_10_5",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "participants": "10.5"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "date": "Дата не может быть в прошлом."
+      },
+      "case": "date_yesterday",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "date": "2026-11-25"
+      },
+      "date": "2026-11-25"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-26, 08:00–09:00 · Иван Петров",
+      "errors": {},
+      "case": "date_today_past",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "date": "2026-11-26",
+        "start": "08:00",
+        "end": "09:00"
+      },
+      "date": "2026-11-26"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-26, 12:00–12:30 · Иван Петров",
+      "errors": {},
+      "case": "date_today_now",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "date": "2026-11-26",
+        "start": "12:00",
+        "end": "12:30"
+      },
+      "date": "2026-11-26"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-26, 13:00–13:30 · Иван Петров",
+      "errors": {},
+      "case": "date_today_future",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "date": "2026-11-26",
+        "start": "13:00",
+        "end": "13:30"
+      },
+      "date": "2026-11-26"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "date_tomorrow",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "date": "2026-11-27"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "endTime": "Время окончания должно быть позже начала."
+      },
+      "case": "duration_negative",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "start": "11:00",
+        "end": "10:59"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–10:00 · Иван Петров",
+      "errors": {},
+      "case": "duration_zero",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "start": "10:00",
+        "end": "10:00"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–10:01 · Иван Петров",
+      "errors": {},
+      "case": "duration_1m",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "start": "10:00",
+        "end": "10:01"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–10:29 · Иван Петров",
+      "errors": {},
+      "case": "duration_29m",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "start": "10:00",
+        "end": "10:29"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–10:30 · Иван Петров",
+      "errors": {},
+      "case": "duration_30m",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "start": "10:00",
+        "end": "10:30"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 09:00–13:00 · Иван Петров",
+      "errors": {},
+      "case": "duration_4h",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "start": "09:00",
+        "end": "13:00"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 09:00–13:01 · Иван Петров",
+      "errors": {},
+      "case": "duration_4h1m",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "start": "09:00",
+        "end": "13:01"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 09:00–18:00 · Иван Петров",
+      "errors": {},
+      "case": "duration_9h",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "start": "09:00",
+        "end": "18:00"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "email": "Введите корректную рабочую почту."
+      },
+      "case": "email_no_at",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "email": "ivan.company.ru"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "email": "Введите корректную рабочую почту."
+      },
+      "case": "email_no_tld",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "email": "ivan@company"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "email_double_at",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "email": "ivan@@company.ru"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "email_double_dot",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "email": "ivan@company..ru"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "email_comma",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "email": "ivan,petrov@company.ru"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "email_leading_dot",
+      "expected": "error",
+      "passed": false,
+      "input": {
+        "email": ".ivan@company.ru"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {},
+      "case": "email_valid_plus",
+      "expected": "success",
+      "passed": true,
+      "input": {
+        "email": "ivan+meeting@company.ru"
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "name": "Укажите имя."
+      },
+      "case": "name_whitespace",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "name": "   "
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "email": "Укажите рабочую почту."
+      },
+      "case": "email_whitespace",
+      "expected": "error",
+      "passed": true,
+      "input": {
+        "email": "   "
+      },
+      "date": "2026-11-27"
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "room": "Выберите комнату."
+      },
+      "case": "required_room",
+      "expected": "error",
+      "passed": true
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "date": "Укажите дату."
+      },
+      "case": "required_date",
+      "expected": "error",
+      "passed": true
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "startTime": "Укажите время начала."
+      },
+      "case": "required_start",
+      "expected": "error",
+      "passed": true
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "endTime": "Укажите время окончания."
+      },
+      "case": "required_end",
+      "expected": "error",
+      "passed": true
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "participants": "Укажите количество участников."
+      },
+      "case": "required_participants",
+      "expected": "error",
+      "passed": true
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "name": "Укажите имя."
+      },
+      "case": "required_name",
+      "expected": "error",
+      "passed": true
+    },
+    {
+      "status": "form-status error",
+      "message": "Проверьте, пожалуйста, заполнение формы.",
+      "errors": {
+        "email": "Укажите рабочую почту."
+      },
+      "case": "required_email",
+      "expected": "error",
+      "passed": true
+    },
+    {
+      "case": "success_message",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "passed": true
+    },
+    {
+      "case": "reload_clears_form",
+      "values": {
+        "room": "",
+        "date": "",
+        "startTime": "",
+        "endTime": "",
+        "participants": "",
+        "name": "",
+        "email": ""
+      },
+      "passed": true
+    },
+    {
+      "case": "input_clears_error",
+      "before": {
+        "status": "form-status error",
+        "message": "Проверьте, пожалуйста, заполнение формы.",
+        "errors": {
+          "participants": "В комнате максимум 10 участника."
+        }
+      },
+      "after": {
+        "status": "form-status",
+        "message": "",
+        "errors": {}
+      },
+      "passed": true
+    },
+    {
+      "case": "room_change_revalidates",
+      "after": {
+        "status": "form-status",
+        "message": "",
+        "errors": {
+          "participants": "В комнате максимум 4 участника."
+        }
+      },
+      "passed": false
+    },
+    {
+      "case": "submit_enter",
+      "after": {
+        "status": "form-status success",
+        "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+        "errors": {}
+      },
+      "passed": true
+    },
+    {
+      "case": "name_html_escaped",
+      "title": "Переговорные — бронирование комнаты",
+      "html": "<strong>Бронирование создано.</strong><br>Средняя, 2026-11-27, 10:00–11:00 · <b>Иван</b><img src=\"x\" onerror=\"document.title='XSS выполнен'\">",
+      "passed": false
+    },
+    {
+      "case": "midnight_stale_min",
+      "old_min": "2026-11-26",
+      "browser_now": "Fri Nov 27 2026 00:01:00 GMT+0300 (Moscow Standard Time)",
+      "after": {
+        "status": "form-status success",
+        "message": "Бронирование создано.\nСредняя, 2026-11-26, 23:00–23:30 · Иван Петров",
+        "errors": {}
+      },
+      "passed": false
+    },
+    {
+      "case": "responsive_320",
+      "viewport": 320,
+      "scroll_width": 320,
+      "passed": true
+    },
+    {
+      "case": "responsive_375",
+      "viewport": 375,
+      "scroll_width": 375,
+      "passed": true
+    },
+    {
+      "case": "responsive_768",
+      "viewport": 768,
+      "scroll_width": 768,
+      "passed": true
+    },
+    {
+      "case": "responsive_1440",
+      "viewport": 1440,
+      "scroll_width": 1440,
+      "passed": true
+    }
+  ]
+}

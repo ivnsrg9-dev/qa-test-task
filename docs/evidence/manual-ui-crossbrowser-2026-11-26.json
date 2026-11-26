@@ -1,0 +1,188 @@
+[
+  {
+    "browser": "chromium",
+    "version": "145.0.7632.6",
+    "case": "positive",
+    "expected": "success",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": true,
+    "submit_requests": []
+  },
+  {
+    "browser": "chromium",
+    "version": "145.0.7632.6",
+    "case": "duration_zero",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–10:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "chromium",
+    "version": "145.0.7632.6",
+    "case": "today_past",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-26, 08:00–09:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "chromium",
+    "version": "145.0.7632.6",
+    "case": "fractional_participants",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "chromium",
+    "version": "145.0.7632.6",
+    "case": "invalid_email",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "chromium",
+    "version": "145.0.7632.6",
+    "case": "reload",
+    "before": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "values_after": {
+      "room": "",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "participants": "",
+      "name": "",
+      "email": ""
+    },
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "version": "145.0.7632.6",
+    "case": "name_html_escaped",
+    "title": "XSS выполнен",
+    "injected_img": 1,
+    "passed": false
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "case": "positive",
+    "expected": "success",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": true,
+    "submit_requests": []
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "case": "duration_zero",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–10:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "case": "today_past",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-26, 08:00–09:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "case": "fractional_participants",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "case": "invalid_email",
+    "expected": "error",
+    "actual": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "passed": false,
+    "submit_requests": []
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "case": "reload",
+    "before": {
+      "status": "form-status success",
+      "message": "Бронирование создано.\nСредняя, 2026-11-27, 10:00–11:00 · Иван Петров",
+      "errors": {}
+    },
+    "values_after": {
+      "room": "",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "participants": "",
+      "name": "",
+      "email": ""
+    },
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "case": "name_html_escaped",
+    "title": "XSS выполнен",
+    "injected_img": 1,
+    "passed": false
+  }
+]
